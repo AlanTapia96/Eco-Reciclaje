@@ -1,0 +1,44 @@
+.secciones {
+  display: none;
+}
+
+#secciones {
+  display: flex;
+}
+
+#carousel {
+  display: block;
+}
+
+.section {
+  width: 25%;
+  height: 100%;
+}
+
+#secciones img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: grayscale(80%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#secciones img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.01);
+}
+
+.content {
+  /* align-items: center; */
+}
+
+@media (min-width: 768px) {
+  .secciones {
+    display: block;
+  }
+
+  #carousel {
+    display: none;
+  }
+}

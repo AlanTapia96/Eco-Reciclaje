@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,500&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header,
+footer {
+  height: 11%;
+  z-index: 99;
+}
+
+.content {
+  height: 80%;
+  display: flex;
+}
+
+header {
+  height: auto;
+}
+
+header nav {
+  width: 100%;
+  height: auto;
+  background-color: rgba(253, 249, 249, 1);
+}
+
+header nav:hover {
+  background-color: rgba(253, 249, 250, 1);
+}
+
+.logo {
+  width: 12rem;
+  height: 3.5rem;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar-nav {
+  padding-left: 9%;
+}
+
+/****** Whatsapp button *******/
+.whatsapp {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1rem 0.5rem 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1.875rem;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(107, 170, 44);
+  background-color: white;
+}
+
+.whatsapp:hover {
+  color: rgb(107, 170, 44);
+}
+
+footer {
+  height: 100%;
+  position: relative;
+  background-color: #727176;
+}
+
+footer .content {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer h6 {
+  margin: 0.2rem;
+  font-size: 1rem;
+  color: #c2c3c9;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: #c2c3c9;
+}
+
+@media only screen and (min-width: 426px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  html {
+    font-size: 15px;
+  }
+
+  #carousel {
+    display: none;
+  }
+
+  #secciones {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  html {
+    font-size: 20px;
+  }
+}
