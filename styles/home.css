@@ -1,13 +1,23 @@
 .secciones {
   display: none;
+  height: 80%;
 }
 
 #secciones {
+  height: 80%;
   display: flex;
 }
 
 #carousel {
   display: block;
+  height: 80%;
+}
+
+#carouselHome,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+  height: 100%;
 }
 
 .section {
