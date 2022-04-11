@@ -1,16 +1,16 @@
 .secciones {
   display: none;
-  height: 80%;
 }
 
 #secciones {
-  height: 80%;
+  height: 100%;
   display: flex;
 }
 
 #carousel {
   display: block;
-  height: 80%;
+  height: 100%;
+  /* heigth: 80%; */
 }
 
 #carouselHome,
@@ -46,6 +46,7 @@
 @media (min-width: 768px) {
   .secciones {
     display: block;
+    min-height: 35rem;
   }
 
   #carousel {
