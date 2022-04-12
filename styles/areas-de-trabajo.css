@@ -6,9 +6,9 @@
   flex-direction: column-reverse;
 }
 
-/* .content {
+.content {
   height: auto;
-} */
+}
 
 .info {
   width: 100%;
@@ -73,7 +73,7 @@ p {
 
 @media (min-width: 768px) {
   .content {
-    height: auto;
+    /* height: auto; */
   }
 }
 
