@@ -40,11 +40,17 @@ footer {
 header nav {
   width: 100%;
   height: auto;
-  background-color: rgba(253, 249, 249, 1);
+  background-color: rgb(248, 244, 244);
+  transition: all 0.4s ease-in-out;
 }
 
 header nav:hover {
-  background-color: rgba(253, 249, 250, 1);
+  /* background-color: rgb(238, 236, 236); */
+  background-color: rgb(255, 255, 255);
+}
+
+header a:hover {
+  color: #2f5f33 !important;
 }
 
 .logo {
@@ -92,6 +98,11 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #727176;
+  transition: all 0.2s ease;
+}
+
+footer:hover {
+  background-color: #5d5c61;
 }
 
 footer .content {
@@ -99,6 +110,10 @@ footer .content {
   margin-top: 1rem;
   text-align: center;
   padding-bottom: 0;
+}
+
+footer .redes {
+  margin-top: 1rem;
 }
 
 footer h6 {
@@ -110,6 +125,19 @@ footer h6 {
 footer p {
   font-size: 0.8rem;
   color: #c2c3c9;
+}
+
+footer a {
+  font-size: 1rem;
+  color: #c2c3c9;
+}
+
+footer .instagram:hover {
+  color: #d02c85 !important;
+}
+
+footer ul {
+  margin: 0;
 }
 
 @media only screen and (min-width: 426px) {
