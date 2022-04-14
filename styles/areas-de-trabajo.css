@@ -51,24 +51,75 @@ p {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .card {
+  width: 45%;
+  justify-content: center;
+  word-wrap: normal;
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 0.9rem;
-  color: #2f5f33;
+  color: white;
   border-radius: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   transition: all 0.3s ease;
+
+  background: linear-gradient(312deg, #a1bc31, #2f5f33, #e0eee1);
+  background-size: 600% 600%;
+
+  -webkit-animation: colorDiagonal 12s ease infinite;
+  -moz-animation: colorDiagonal 12s ease infinite;
+  animation: colorDiagonal 12s ease infinite;
+}
+
+@-webkit-keyframes colorDiagonal {
+  0% {
+    background-position: 0% 13%;
+  }
+  50% {
+    background-position: 100% 88%;
+  }
+  100% {
+    background-position: 0% 13%;
+  }
+}
+@-moz-keyframes colorDiagonal {
+  0% {
+    background-position: 0% 13%;
+  }
+  50% {
+    background-position: 100% 88%;
+  }
+  100% {
+    background-position: 0% 13%;
+  }
+}
+@keyframes colorDiagonal {
+  0% {
+    background-position: 0% 13%;
+  }
+  50% {
+    background-position: 100% 88%;
+  }
+  100% {
+    background-position: 0% 13%;
+  }
 }
 
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
     rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 45%;
+    padding: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -100,8 +151,14 @@ p {
   .info h2 {
     display: block;
   }
+
+  .cards {
+    flex-direction: row;
+  }
+
   .card {
-    padding: 0.5rem;
+    width: 40%;
+    padding: 1.5rem;
     margin: 0 0.5rem 1rem;
   }
 }
