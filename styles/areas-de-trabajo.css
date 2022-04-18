@@ -27,7 +27,7 @@ h2 {
   display: none;
 }
 
-p {
+#areas p {
   font-size: 1rem;
   margin-bottom: 2rem;
   line-height: 1.7;
@@ -119,12 +119,6 @@ p {
   .card {
     width: 45%;
     padding: 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .content {
-    /* height: auto; */
   }
 }
 

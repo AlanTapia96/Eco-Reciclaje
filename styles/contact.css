@@ -10,12 +10,16 @@ section {
 section .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   align-items: flex-start;
 }
 
+.content {
+  height: fit-content;
+}
+
 .formulario {
-  /* margin-top: 2rem; */
   width: 100%;
   height: fit-content;
   padding: 1.5rem;
@@ -58,9 +62,15 @@ section .container {
   margin-top: 1rem;
 }
 
+@media (min-width: 768px) {
+  .content {
+    height: auto;
+  }
+}
+
 @media (min-width: 991px) {
   section .container {
-    padding-top: 4rem;
+    padding-top: 1rem;
   }
 
   .formulario {
@@ -69,7 +79,10 @@ section .container {
   }
 
   .image {
-    width: 30%;
-    display: block;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
   }
 }

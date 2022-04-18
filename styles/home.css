@@ -10,7 +10,6 @@
 #carousel {
   display: block;
   height: 100%;
-  /* heigth: 80%; */
 }
 
 #carouselHome,
@@ -18,6 +17,10 @@
 .carousel-item,
 .carousel-item img {
   height: 100%;
+}
+
+.carousel-indicators {
+  margin-bottom: 0 !important;
 }
 
 .section {
@@ -39,14 +42,10 @@
   transform: scale(1.01);
 }
 
-.content {
-  /* align-items: center; */
-}
-
 @media (min-width: 768px) {
   .secciones {
     display: block;
-    min-height: 35rem;
+    min-height: 32rem;
   }
 
   #carousel {

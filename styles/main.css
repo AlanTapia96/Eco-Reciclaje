@@ -14,7 +14,6 @@ a {
 html {
   font-size: 16px;
   min-height: 100%;
-  /* height: 100%; */
 }
 
 body {
@@ -45,7 +44,6 @@ header nav {
 }
 
 header nav:hover {
-  /* background-color: rgb(238, 236, 236); */
   background-color: rgb(255, 255, 255);
 }
 
@@ -71,14 +69,14 @@ header img {
 /****** Whatsapp button *******/
 .whatsapp {
   position: fixed;
-  width: 3rem;
-  height: 3rem;
-  margin: 0 1rem 0.5rem 0;
-  bottom: 0;
-  right: 0;
+  width: 2.3rem;
+  height: 2.3rem;
+  margin: 0 0.2rem 0.5rem 0;
+  bottom: 0px;
+  right: 0px;
   border-radius: 50px;
   text-align: center;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -93,7 +91,6 @@ header img {
 }
 
 footer {
-  /* height: 100%; */
   position: relative;
   bottom: 0;
   width: 100%;
@@ -118,7 +115,7 @@ footer .redes {
 
 footer h6 {
   margin: 0.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #c2c3c9;
 }
 
