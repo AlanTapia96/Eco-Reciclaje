@@ -12,11 +12,12 @@ section .container {
   justify-content: space-between;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  align-items: flex-start;
+  height: 100%;
+  align-items: center;
 }
 
 .content {
-  height: fit-content;
+  height: 78vh;
 }
 
 .formulario {
@@ -63,9 +64,9 @@ section .container {
 }
 
 @media (min-width: 768px) {
-  .content {
+  /* .content {
     height: auto;
-  }
+  } */
 }
 
 @media (min-width: 991px) {
@@ -73,9 +74,13 @@ section .container {
     padding-top: 1rem;
   }
 
+  .content {
+    height: 85vh;
+  }
+
   .formulario {
     width: 55%;
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
   .image {
