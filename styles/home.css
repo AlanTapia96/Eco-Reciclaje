@@ -3,13 +3,13 @@
 }
 
 #secciones {
-  height: 100%;
+  height: 80vh;
   display: flex;
 }
 
 #carousel {
   display: block;
-  height: 100%;
+  height: 81vh;
 }
 
 #carouselHome,
@@ -42,10 +42,10 @@
   transform: scale(1.01);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .secciones {
     display: block;
-    min-height: 32rem;
+    height: 100%;
   }
 
   #carousel {
