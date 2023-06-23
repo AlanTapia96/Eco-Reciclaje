@@ -48,8 +48,8 @@ body {
   padding: 2rem;
 }
 
-.people header img{
-  object-fit: cover
+.people header img {
+  object-fit: cover;
 }
 
 .image img {
@@ -84,12 +84,12 @@ body {
   }
 }
 
-.people{
+.people {
   width: 100%;
   display: grid;
   gap: 1rem;
   grid-auto-rows: 22rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%,15rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
 }
 
 .profile-card {
@@ -106,7 +106,7 @@ body {
 }
 
 .profile-card header {
-  background: #A1BC31;
+  background: #a1bc31;
   padding: 1px;
   height: 50%;
   transition: all 0.5s;
@@ -123,7 +123,7 @@ body {
 
 .profile-card header h2,
 .profile-card header h3 {
-  color: #A1BC31;
+  color: #a1bc31;
   font-family: "Open Sans";
   text-align: center;
   transition: all 0.5s;
@@ -185,7 +185,9 @@ body {
   transition-delay: 0.45s;
 }
 
-.profile-card .profile-social-links li a {
+.profile-card .profile-social-links li i,
+.profile-card .profile-social-links li a,
+.profile-card .profile-social-links li div {
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -196,10 +198,13 @@ body {
   width: 40px;
   transition: all 0.3s;
   text-decoration: none;
-  color: #A1BC31;
+  color: #a1bc31;
+  cursor: pointer;
 }
 
-.profile-card .profile-social-links li a:hover {
+.profile-card .profile-social-links li a:hover,
+.profile-card .profile-social-links li div:hover,
+.profile-card .profile-social-links li i:hover {
   transform: scale(1.1);
 }
 
@@ -231,12 +236,9 @@ body {
   transform: translateY(0);
 }
 
-
-
 @media (min-width: 768px) {
   /* .info p {
     font-size: 2.3vh;
     line-height: 1.7;
   } */
-
 }
