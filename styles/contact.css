@@ -17,7 +17,7 @@ section .container {
 }
 
 .content {
-  height: 78vh;
+  height: 80vh;
 }
 
 .formulario {
@@ -80,7 +80,6 @@ section .container {
 
   .formulario {
     width: 55%;
-    margin-top: 3rem;
   }
 
   .image {

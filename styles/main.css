@@ -22,7 +22,6 @@ body {
   flex-direction: column;
 }
 
-
 header,
 footer {
   z-index: 99;
@@ -37,7 +36,7 @@ header {
   height: 10vh;
 }
 
-main{
+main {
   height: auto;
   min-height: 80vh;
 }
@@ -58,7 +57,7 @@ header a:hover {
 }
 
 .logo {
-  width: 10rem;
+  width: 6rem;
   height: 100%;
 }
 
@@ -68,15 +67,19 @@ header img {
   object-fit: fill;
 }
 
+.navbar {
+  padding: 0.3rem 0;
+}
+
 .navbar-nav {
   padding-left: 9%;
 }
 
-.navbar-brand{
+.navbar-brand {
   padding: 0;
 }
 
-.navbar .container{
+.navbar .container {
   height: 100%;
 }
 
@@ -111,6 +114,24 @@ footer {
   width: 100%;
   background-color: #727176;
   transition: all 0.2s ease;
+}
+
+footer .container,
+footer .row {
+  min-height: 10vh;
+}
+
+footer .eco,
+footer .redes {
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .redes {
+  margin-top: 1rem;
 }
 
 footer:hover {
@@ -159,6 +180,10 @@ footer ul {
 @media only screen and (min-width: 768px) {
   .content {
     height: 90vh;
+  }
+
+  footer .redes {
+    margin-top: 0;
   }
 }
 

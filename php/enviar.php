@@ -4,10 +4,9 @@
 	$asunto = 'Formulario Web - FundacionEcoreciclaje.org.ar';
 	$mensaje = "Nombre: ".$nombre."<br> Email: $email<br> Mensaje:".$_POST['message'];
 
-    $cabeceras = 'From: ecoreciclaje@example.com' . "\r\n" .
-    'Reply-To: ecoreciclaje@example.com' . "\r\n" .
-    "Content-type: text/html; charset=UTF-8" . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+   $cabeceras = 'From: ' . $email . "\r\n" .
+   "Content-type: text/html; charset=UTF-8" . "\r\n" .
+   'X-Mailer: PHP/' . phpversion();
 
     if( mail('tapia.alan.g@gmail.com', $asunto, $mensaje, $cabeceras) ) {
         echo json_encode(array(
