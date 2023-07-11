@@ -89,8 +89,7 @@ body {
   display: grid;
   gap: 1rem;
   grid-auto-rows: 22rem;
-  /* grid-template-columns: repeat(auto-fill, minmax(min(49%, 20rem), 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
 }
 
 .profile-card {
@@ -242,5 +241,11 @@ body {
 
   .profile-card:hover .profile-social-links li {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 250px) {
+  .people {
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   }
 }
