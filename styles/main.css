@@ -33,12 +33,12 @@ footer {
 }
 
 header {
-  height: 10vh;
+  /* height: 15vh; */
 }
 
 main {
   height: auto;
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 header nav {
@@ -58,6 +58,15 @@ header a:hover {
 
 .logo {
   height: 100%;
+  width: 40%;
+}
+
+.navbar-collapse {
+  padding-top: 1rem;
+}
+
+.navbar-toggler {
+  font-size: 1rem !important;
 }
 
 header img {
@@ -80,6 +89,7 @@ header img {
 
 .navbar .container {
   height: 100%;
+  /* flex-wrap: nowrap; */
 }
 
 /****** Whatsapp button *******/
@@ -174,9 +184,17 @@ footer ul {
   html {
     font-size: 18px;
   }
+
+  .logo {
+    width: 20%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  .logo {
+    width: 15%;
+  }
+
   .content {
     height: 90vh;
   }
@@ -190,10 +208,18 @@ footer ul {
   html {
     font-size: 15px;
   }
+
+  .navbar-collapse {
+    padding-top: 0;
+  }
 }
 
 @media only screen and (min-width: 1240px) {
   html {
     font-size: 20px;
+  }
+
+  .logo {
+    width: 10%;
   }
 }
