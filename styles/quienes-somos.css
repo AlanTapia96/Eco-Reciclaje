@@ -244,6 +244,15 @@ body {
   }
 }
 
+@media (min-width: 990px) {
+    .people {
+      display: flex;
+      padding: 0;
+    }
+  
+}
+
+
 @media (max-width: 250px) {
   .people {
     grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
